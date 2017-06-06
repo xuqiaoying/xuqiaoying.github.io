@@ -1,3 +1,21 @@
-body{
+body {
     background-image: url(../images/bg.gif);
+    
+}
+.content {
+    width:960px;
+    margin: 0 auto;
+    border:1px solid #ddd;
+    
+}
+p {
+    text-indent: 2em;
+    
+}
+.content p img {
+    
+    vertical-align:right;
+}
+.foot{
+    text-align: center;
 }
