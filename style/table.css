@@ -1,0 +1,27 @@
+table {
+    border: 2px solid #ccc;
+    border-collapse: collapse;
+}
+.column1 {
+    background-color: #c7c4c1;
+}
+.column2 {
+    background-color: #d7cab5;
+}
+.column3 {
+    background-color: #ccc;
+}
+th ,td {
+    border: 1px solid #a5a1a1;
+    padding: 5px 10px;
+    text-align: center;
+}
+thead,.relax {
+    background: #e9e0b0;
+}
+p {
+    margin: 0;
+}
+.info {
+    width: 280px;
+}

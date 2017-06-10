@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form</title>
+    <link rel="stylesheet" href="style/table.css">
+</head>
+<body>
+    <div>
+    <table>
+        <caption>Time table</caption>
+        <colgroup>
+            <col class="column1">
+            <col class="column2" span="5">
+            <col class="column3" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th></th>
+                <th>星期一</th>
+                <th>星期二</th>
+                <th>星期三</th>
+                <th>星期四</th>
+                <th>星期五</th>
+                <th>星期六</th>
+                <th>星期日</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>7:00-9:00</th>
+                <td>起床</td>
+                <td>早餐</td>
+                <td>早餐</td>
+                <td>早餐</td>
+                <td>早餐</td>
+                <td>睡觉</td>
+                <td>早餐</td>
+            </tr>
+            <tr>
+                <th>9:00-13:00</th>
+                <td>工作</td>
+                <td>工作</td>
+                <td>工作</td>
+                <td>工作</td>
+                <td>工作</td>
+                <td rowspan="3">待定</td>
+                <td>看书</td>
+            </tr>
+            <tr>
+                <th>13:00-14:00</th>
+                <td colspan="5" class="relax">午休</td>
+                <td class="relax">午休</td>
+            </tr>
+            <tr>
+                <th>14:00-18:00</th>
+                <td>工作</td>
+                <td>工作</td>
+                <td>工作</td>
+                <td>工作</td>
+                <td>工作</td>               
+                <td>编码</td>
+            </tr>
+            <tr>
+                <th>18:00-20:00</th>
+                <td>听广播</td>
+                <td>晚饭</td>
+                <td>晚饭</td>
+                <td>听广播</td>
+                <td>晚饭</td>
+                <td>晚饭</td>
+                <td>听广播</td>                
+            </tr>
+            <tr>
+                <th>20:00-23:00</th>
+                <td>写作业</td>
+                <td>上课</td>
+                <td>自习</td>
+                <td>上课</td>
+                <td>自习</td>
+                <td>写作业</td>
+                <td>上课</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    
+    
+    <form action="" method="post">
+        <fieldset class="info">
+            <legend >个人信息表</legend>
+            <p>姓名：<input type="text" name="username" maxlength="15" placeholder="姓名" required></p><br>
+            <p>性别：<label>男<input type="radio" name="gender"></label>
+                <label>女<input type="radio" name="gender"></label></p><br>
+            <p><label for="birthday">生日：</label>
+            <input id="birthday" name="birthday" type="date" required></p><br>
+            <p>爱好：<label>游泳<input type="checkbox" name="hoby"></label>
+                <label>爬山<input type="checkbox" name="hoby"></label>
+                <label>跑步<input type="checkbox" name="hoby"></label>
+                <label>其他<input type="checkbox" name="hoby"></label></p><br>
+            <p>省份：<select name="province">
+                <option value="all">全部</option>
+                <option value="guangdong">广东省</option>
+                <option value="guangxi">广西省</option>
+                <option value="hainan">海南省</option>
+                <option value="hunan">湖南省</option>          
+            </select>
+            </p><br>
+            
+                <p>手机：<input type="text" name="tel" maxlength="15" required></p>   <br>        
+                <p>邮箱：<input type="email" name="email"> </p><br>
+                <p>地址：<textarea name="address" cols="20" rows="5" >请写完整您的具体地址...</textarea></p><br>
+                <p>其他文件：<input type="file" name="file"></p><br>
+                <button type="reset">重置</button>
+                <button type="submit">提交</button>
+        </fieldset>
+    </form>
+    <hr>
+    <form oninput="result.value = parseInt(a.value) ** parseInt(b.value)">
+  <input type="number" name="a" value="2"> 的
+  <input type="number" name="b" value="3">次方 =
+  <output name="result">8</output>
+</form>
+</body>
+</html>
