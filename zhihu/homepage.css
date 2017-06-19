@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;      
 }
+@media(max-width:740px) {
+    .footer {
+        display: none;
+    }
+}
 body {
     background-color: #f7fafc;
 }
@@ -62,6 +67,9 @@ p {
 }
 .form input:first-child {
     border-top:none;
+}
+input::-webkit-input-placeholder {
+    color: #ccc;
 }
 .register {
     color: #ffffff;
