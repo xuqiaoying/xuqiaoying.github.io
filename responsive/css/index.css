@@ -121,28 +121,19 @@ a:hover {
     margin: auto;
     background-color: #f7f8fd;
 }
-.line nav {
-    max-width: 1300px;
-    margin: auto;
-}
 .line ul {
     display: flex;
-    height: 50px;
+    justify-content: center;
 }
 .line ul li {
     cursor: pointer;
-    flex: 1 1 100px;
+    flex-basis: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 14px 0;
+    
 }
-.line ul li a {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .wrap {
     max-width: 1300px;
     margin: auto;
@@ -181,17 +172,18 @@ content {
     box-shadow: 0 0 4px #666;
     background-color: #efefef;
     margin-right: 15px;
+    flex-wrap: wrap;
 }
-.publicone .public,.publictwo .public,.publicthree .public,.publicfour .public {
-    margin: 40px 0;
-    text-align: center;
+.publics>div {
+    flex-basis: 25%;
 }
-/*.publicone,.publictwo,.publicthree,.publicfour {
+.public {
     display: flex;
     flex-direction: column;
-    align-items: space-around;
-    justify-content: space-around;
-}*/
+    justify-content: center;
+    align-items: center;
+}
+
 .public img {
     width: 120px;
     height: 140px;
@@ -199,17 +191,14 @@ content {
     cursor: pointer;
     transition: .3s;
 }
-
 .public img:hover {
     transform: translate3d(0,-2px,0);
     box-shadow: 0 0 40px #abacac;
 }
 .public p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #535353;
     font-size: 15px;
+    margin: 0px;
 }
 
 .aside section h4,aside section p {
@@ -221,7 +210,6 @@ content {
 .aside section p {
     margin: 15px 0;
 }
-
 .aside .fa {
     font-size: 30px;
 }
@@ -238,6 +226,13 @@ content {
 }
 .fa-google-plus-square {
     color: #953728;
+}
+.cbox:checked {
+    -webkit-appearance: none;
+    background: #41c571;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
 }
 .bottom {
     background-color: #f7f8fd;
@@ -276,9 +271,14 @@ content {
     .publics {
         flex-wrap: wrap;
     }
-    publicthree {
-        order: 1;
+    .publicfour {
+        order: -1;
     }
-    
+    .line ul {
+        flex-wrap: wrap;
+    }
+    .line ul li {
+        flex-basis: 33.33%;
+    }
 }
 
