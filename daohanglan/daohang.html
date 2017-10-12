@@ -36,11 +36,11 @@
             1.position:static:<br/>
             默认值，没有定位<br/>
             2.position:relative:<br/>
-            相对定位。如果不设置relative属性,元素将按照静态定位时的位置进行调整,但当设置position为relative后，将根据top，right，bottom，left的值按照它理应所在的位置(可能是默认的static位置)进行偏移.<br/>
+            相对定位。不会脱离文档流。如果不设置relative属性,元素将按照静态定位时的位置进行调整,但当设置position为relative后，将根据top，right，bottom，left的值按照它理应所在的位置(可能是默认的static位置)进行偏移.<br/>
             3.position:absolute:<br/>
             绝对定位。会脱离文档流，可以根据有着position属性的父元素进行定位。<br/>
             4.position:fixed:<br/>
-            固定定位。会根据浏览器的窗口进行定位。<br/>
+            固定定位。会脱离文档流。会根据浏览器的窗口进行定位。<br/>
             5.position:sticky:<br/>
             粘性定位。该元素并不脱离文档流,在容器中被滚动超过指定的偏移值时，元素在容器内固定在指定位置,不再向上移动。还需要考虑父容器的高度情况：sticky元素在到达父容器的底部时，则不会再发生定位，如果父容器高度并没有比sticky元素高，那么sticky元素一开始就达到了底部，并不会有定位的效果。<br/>
             6.position:inherit:<br/>
